@@ -130,32 +130,33 @@ def grille():
   goto(85, 125)
 
 def play(elemDeJeu,listDeJeu,equipe,dicDeJeu,run):
-  '''renvois une action jouer completement depnedent des parametres
-  elemDeJeu est une KEY  aui prend sur dicDeJeu equipe est une variable de type int
-  lsitDeJeu est un elist du jeu auquel on ajout element de dicDeJeu avec la KEY elemDeJeu
-  '''
-  up()
-  goto(dicDeJeu[elemDeJeu])
-  down()
-  if equipe == 1:
-    dot(25)
-  else:
-      cross()
-  listDeJeu.append((dicDeJeu[elemDeJeu]))
-  run = False
+    '''renvois une action jouer completement depnedent des parametres
+    elemDeJeu est une KEY  aui prend sur dicDeJeu equipe est une variable de type int
+    lsitDeJeu est un elist du jeu auquel on ajout element de dicDeJeu avec la KEY elemDeJeu
+    '''
+    up()
+    goto(dicDeJeu[elemDeJeu])
+    down()
+    if equipe == 1:
+        dot(25)
+    else:
+        cross()
+    listDeJeu.append((dicDeJeu[elemDeJeu]))
+    return None
 
 
 
 def playBot(elemDeJeu,listDeJeu,equipe,dicDeJeu):
-  '''renvois une action comise par le joueur, elle depend completemnt des paramettres
-  elemDeJeu est une KEY  aui prend sur dicDeJeu equipe est une variable de type int
-  lsitDeJeu est un elist du jeu auquel on ajout element de dicDeJeu avec la KEY elemDeJeu
-  '''
-  up()
-  goto(dicDeJeu[elemDeJeu])
-  down()
-  if equipe != 1:
-    dot(25)
-  else:
-    cross()
-  listDeJeu.append(dicDeJeu[elemDeJeu])
+    '''renvois une action comise par le joueur, elle depend completemnt des paramettres
+    elemDeJeu est une KEY  aui prend sur dicDeJeu equipe est une variable de type int
+    lsitDeJeu est un elist du jeu auquel on ajout element de dicDeJeu avec la KEY elemDeJeu
+    '''
+    up()
+    goto(dicDeJeu[elemDeJeu])
+    down()
+    if equipe != 1:
+        dot(25)
+    else:
+        cross()
+    listDeJeu.append(dicDeJeu[elemDeJeu])
+    return None
