@@ -1,5 +1,6 @@
 from turtle import *
 from random import randint
+import bot as foncB
 import fonction as fonc
 #PARAMETRE DE JEU
 speed(10)
@@ -40,9 +41,5 @@ while True:
   print('Au tour du robot:')
   run = True
   while run == True:
-    attackOrdi = str(randint(1,len(dicPos)))
-    if dicPos[attackOrdi] in list_de_deja_utiliser:
-      attackOrdi = str(randint(1,len(dicPos)))
-    if dicPos[attackOrdi] not in list_de_deja_utiliser:
-      fonc.playBot(attackOrdi,list_de_deja_utiliser,equipe,dicPos)
-      run = False
+    foncB.robot(input_du_joueurKEY,list_de_deja_utiliser,equipe,dicPos)
+    run = False
