@@ -12,6 +12,4 @@ j'ai appris les structure de donnee donc maintenant le code est plus reduis et i
 1.2 version:
 j'ai appris a separer mon code en fichier different donc il est plus lisible 
 
-2 version:
-elle est pas encore la 
-je vais essais d'implementer un bot simple 
+
